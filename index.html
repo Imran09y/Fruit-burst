@@ -9,10 +9,106 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header class="container mx-auto">
+        <!-- navbar-section start -->
+        <nav>
+            <div
+                class="bg-base-100 flex flex-row justify-between bg-[#F85559] items-center mt-12 rounded-full px-8 py-6">
+                <!-- nav menu part start -->
+                <div class="hidden lg:flex">
+                    <div class="flex flex-row gap-4 text-[#FFF] font-medium text-lg ">
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Shop</a>
+                        <a href="">All Fruits</a>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-2 text-[#FFF] text-4xl font-bold">
+                    <img class="h-10 w-10" src="images/logo.png" alt="">
+                    <h3 class="text-4xl font-bold ">Fruit Burst</h3>
+                </div>
+                <div class="bg-white border-none outline-none rounded-full h-12 w-[400px] px-4 items-center flex flex-row justify-between ">
+                    <input type="text" placeholder="Search here" class="border-none outline-none w-[380px]"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>                             
+                </div>
 
+                <!-- nav menu part end -->
+                <!-- <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                </div> -->
+            </div>
+        </nav>
+        <!-- navbar-section end -->
+
+        <!-- banner section start -->
+         <section class="container mx-auto mt-12">
+            <div class="hero h-[600px]" style="background-image: url(images/banner1.png);">
+                <div class="hero-overlay bg-opacity-0"></div>
+                  <div class="py-10 text-center">
+                    <h1 class=" text-7xl font-extrabold text-white  w-[660px] mb-6">Exotic tastes at your doorstep</h1>
+                    <p class=" text-xl font-medium text-white mb-6">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559]  border-none outline-none text-white">Shop Now</button>
+                  </div>   
+              </div>
+              <div class="grid grid-cols-5  w-[1196px] mx-auto px-14 py-12 rounded-lg bg-[#FFF] -mt-28">
+                <div>
+                    <img src="images/fruit1.png" alt="">
+                    <h4 class="text-xl font-medium px-4 pt-4">Strawberry</h4>
+                </div>
+                <div>
+                    <img src="images/fruit2.png" alt="">
+                    <h4 class="text-xl font-medium px-4 pt-4 ">Orange</h4>
+                </div>
+                <div>
+                    <img src="images/fruit3.png" alt="">
+                    <h4 class="text-xl font-medium px-9 pt-4 ">Mango</h4>
+                </div>
+                <div>
+                    <img src="images/fruit4.png" alt="">
+                    <h4 class="text-xl font-medium px-9 pt-4 ">Strawberry</h4>
+                </div>
+                <div>
+                    <img src="images/fruit5.png" alt="">
+                    <h4 class="text-xl font-medium px-12 pt-4 ">Mango</h4>
+                </div>
+             </div>
+         </section>
+        <!-- banner section end -->
+    </header>
 </body>
 
 </html>
