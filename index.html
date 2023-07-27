@@ -31,8 +31,7 @@
     <header class="container mx-auto">
         <!-- navbar-section start -->
         <nav>
-            <div
-                class="bg-base-100 flex lg:flex-row lg:justify-around justify-between lg:bg-[#F85559] items-center mt-8 rounded-full px-28 py-6 ">
+            <div class="bg-base-100 flex flex-row  lg:justify-around lg:bg-[#F85559] items-center mt-8 rounded-full px-28 py-6 ">
                 <!-- m -->
                 <div class="hidden lg:flex">
                     <div class="flex flex-row gap-6 text-[#FFF] font-medium text-lg mr-32">
@@ -43,11 +42,13 @@
                     </div>
                 </div>
 
-                <div class="flex flex-row  gap-2 lg:text-[#FFF] text-4xl font-bold">
-                    <img class=" lg:h-10  lg:w-10" src="images/logo.png" alt="">
-                    <h3 class=" text-xl lg:text-4xl font-bold ">Fruit Burst</h3>
+                <div class="flex flex-row items-center lg:text-[#FFF] text-4xl font-bold absolute -ml-24 lg:ml-0 mx-20">
+                    <img class=" h-10 w-10 pt-2" src="images/logo.png" alt="">
+                    <h3 class="text-sm lg:text-4xl font-bold px-2 pt-4  lg:pt-2 ">Fruit Burst</h3>
                 </div>
 
+              <div class="flex flex-row justify-between space-x-20 mx-32 lg:mx-0 pt-2">
+                
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost  lg:hidden">
@@ -58,23 +59,22 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box  w-64">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
+                    </div>
                     <div
-                        class="bg-white border-none outline-none rounded-full h-8 w-[400px] ml-80  px-4 mb-4 items-center hidden lg:flex flex-row ">
+                        class="bg-white border-none outline-none rounded-full h-8 w-[400px] ml-80  px-4 mt-2 items-center hidden lg:flex flex-row ">
                         <input type="text" placeholder="Search here" class="border-none outline-none w-[380px]">
                         <i class="fa-solid fa-magnifying-glass"></i>
 
                     </div>
-                </div>
-
-
-                <!-- end -->
+              </div>
+              
             </div>
 
         </nav>
@@ -83,7 +83,7 @@
         <!-- banner section start -->
         <section class="container mx-auto mt-12">
             <!-- slider or carousel start -->
-            <div class="carousel   lg:w-full ">
+            <div class="carousel    lg:w-full ">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/images//banner1.png" class="w-full" />
 
@@ -96,11 +96,11 @@
                                     quality
                                     organic products
                                 </p>
-                                <button class="btn  bg-[#F85559]  border-none outline-none text-white">Shop Now</button>
+                                <button class="btn bg-[#F85559]  border-none outline-none text-white">Shop Now</button>
                             </div>
                         </div>
                     </div>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5  right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
@@ -526,72 +526,81 @@
         </section>
         <!-- deal section end-->
         <!-- team section start -->
-        <section class="container mx-auto pb-10 ">
-            <div class="hero h-[1340px] lg:h-[600px]" style="background-image: url(images/team.png);">
+        <section class="container mx-auto  ">
+            <div class="hero sm:h-[1360px] lg:h-[600px]" style="background-image: url(images/team.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
-                <div class="lg:text-center  lg:mb-64 align-top">
-                    <h1 class=" text-3xl  lg:text-5xl font-extrabold text-white  lg:w-[660px] ">Meet the team section
-                    </h1>
-                    <p class=" lg:text-base font-medium text-white pb-24">Contrary to popular belief, is not simply
-                        random
-                        text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000
-                        years old.</p>
+                <div >
+                    <div class="lg:text-center  lg:mb-64 space-y-4 ">
+                        <h1 class=" text-3xl  lg:text-5xl font-extrabold text-white  lg:w-[660px] ">Meet the team
+                            section
+                        </h1>
+                        <p class=" lg:text-base font-medium text-white  lg:pb-24">Contrary to popular belief, is not simply
+                            random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making
+                            it over 2000
+                            years old.</p>
+                    </div>
                 </div>
-                <div class="pr-8 ">
-                    <div class="grid grid-cols-1 lg:grid-cols-4 pt-48 gap-4 lg:text-center ">
-                        <div class="p-6">
-                            <img class="px-6" src="images/member1.png" alt="">
-                            <h3 class="font-bold text-2xl text-white pt-4">Awlad Hossain</h3>
-                            <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
-                            <div class="flex flex-row justify-center gap-4 text-white">
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-facebook-f"></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-twitter"></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i class="fa-brands fa-linkedin-in">
-                                    </i></span>
+                <div >
+                    <div class="pr-8 mt-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-4 pt-40  20 gap-4 lg:text-center ">
+                            <div class="p-6">
+                                <div>
+                                    <img class="px-6" src="images/member1.png" alt="">
+                                </div>
+                                 <div>
+                                    <h3 class="font-bold text-2xl text-white pt-4">Awlad Hossain</h3>
+                                    <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
+                                 </div>
+                                <div class="flex flex-row justify-center gap-4 text-white">
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-facebook-f"></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-twitter"></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i class="fa-brands fa-linkedin-in">
+                                        </i></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-6 text-center">
-                            <img class="px-6" src="images/member2.png" alt="">
-                            <h3 class="font-bold text-2xl text-white pt-4">Safia Chowdhury</h3>
-                            <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
-                            <div class="flex flex-row justify-center gap-4 text-white">
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-facebook-f"></i></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-twitter"></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="p-6 text-center">
+                                <img class="px-6" src="images/member2.png" alt="">
+                                <h3 class="font-bold text-2xl text-white pt-4">Safia Chowdhury</h3>
+                                <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
+                                <div class="flex flex-row justify-center gap-4 text-white">
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-facebook-f"></i></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-twitter"></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-linkedin-in"></i></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class=" p-6 text-center">
-                            <img class="px-6" src="images/member3.png" alt="">
-                            <h3 class="font-bold text-2xl text-white pt-4">Rokib Hossain</h3>
-                            <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
-                            <div class="flex flex-row justify-center gap-4 text-white">
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-facebook-f"></i></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-twitter"></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-linkedin-in"></i></span>
+                            <div class=" p-6 text-center">
+                                <img class="px-6" src="images/member3.png" alt="">
+                                <h3 class="font-bold text-2xl text-white pt-4">Rokib Hossain</h3>
+                                <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
+                                <div class="flex flex-row justify-center gap-4 text-white">
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-facebook-f"></i></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-twitter"></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-linkedin-in"></i></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="p-6 text-center ">
-                            <img class="px-6" src="images/member4.png" alt="">
-                            <h3 class="font-bold lg:text-2xl text-white pt-4">Chaity</h3>
-                            <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
-                            <div class="flex lg:flex-row justify-center gap-4 text-white items-center">
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-facebook-f"></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-twitter"></i></span>
-                                <span class=" bg-red-400 rounded-full w-6 h-6"><i
-                                        class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="p-6 text-center ">
+                                <img class="px-6" src="images/member4.png" alt="">
+                                <h3 class="font-bold lg:text-2xl text-white pt-4">Chaity</h3>
+                                <p class="text-base text-white text-medium text-center pb-4 pt-2">Fruits Expert</p>
+                                <div class="flex lg:flex-row justify-center gap-4 text-white items-center">
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-facebook-f"></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-twitter"></i></span>
+                                    <span class=" bg-red-400 rounded-full w-6 h-6"><i
+                                            class="fa-brands fa-linkedin-in"></i></span>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -650,18 +659,19 @@
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row gap-3">
-                       <div class="text-center">
-                        <span class="bg-slate-400  rounded-full h-10 w-10 text-center p-2"> <i
-                            class="fa-solid fa-gift"></i></i></i></span>
-                       </div>
+                        <div class="text-center">
+                            <span class="bg-slate-400  rounded-full h-10 w-10 text-center p-2"> <i
+                                    class="fa-solid fa-gift"></i></i></i></span>
+                        </div>
                         <div class="flex flex-col space-y-2">
                             <div class="m-4 px-4  space-y-2">
                                 <h3 class="text-lg lg:text-2xl font-extrabold">Gift Certificates</h3>
                                 <div class="w-3/12 bg-black h-[2px]">
-                                <hr>
-                               </div>
-                             <p class="text-base font-medium">Professional employees are there for you to pick <br> the
-                                most amazing and fresh fruits.</p>
+                                    <hr>
+                                </div>
+                                <p class="text-base font-medium">Professional employees are there for you to pick <br>
+                                    the
+                                    most amazing and fresh fruits.</p>
                             </div>
                         </div>
                     </div>
@@ -724,9 +734,7 @@
                                     <hr>
                                 </div>
                                 <p class="text-base font-medium">Professional employees are there for you to pick <br>
-                                    the
-                                    most
-                                    amazing and fresh fruits.</p>
+                                    the most amazing and fresh fruits.</p>
                             </div>
                         </div>
                     </div>
